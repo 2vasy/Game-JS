@@ -18,7 +18,7 @@ startBtn.onclick = function randonGenerator(event) {
     let zweiteGrenze = Math.floor(second.value);
     randNum = Math.floor(Math.random() * (zweiteGrenze - ersteGrenze + 1)) + ersteGrenze;
     if(ersteGrenze == 0 || zweiteGrenze == 0){
-        alert("Fill in all empty fields!!!")
+        alert("Fill in all empty fields!!!");
         return;
     }
     los.textContent = "Los Geht's";
