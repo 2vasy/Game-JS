@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="spiel.css" />
+        <title>Spiel: Zahl erraten</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="canvas">
+                <div class="desc">
+                    <h1 class="desc__title">Spiel: Zahl erraten</h1>
+                    <p class="desc__subtitle">
+                        Der Computer hat eine Zahl
+                        <label>von</label>
+                        <input type="text" class="first" />
+                        bis
+                        <label for="">bis</label>
+                        <input type="text" class="second" />
+                        erraten.
+                        <button type="submit" class="start">Start</button>
+                        <span class="los"></span>
+                    </p>
+                </div>
+                <div class="field">
+                    <label for="" class="filed__form__label">Ihre Nummer: </label>
+                    <input type="text" class="field__form__input" />
+                    <button class="field__form__btn">Check</button>
+                </div>
+                <div class="result">
+                    <div class="result__check">
+                        <span class="result__check__label">Result:</span>
+                        <span class="result__check__out"></span>
+                    </div>
+                    <div class="result__help">
+                        <span class="result__help">Hinweis:</span>
+                        <span class="result__help__out"></span>
+                    </div>
+                    <div class="result__count">
+                        <span class="result__count__label">Number of attempts:</span>
+                        <span class="result__count__out"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="spielW.js"></script>
+    </body>
+</html>
