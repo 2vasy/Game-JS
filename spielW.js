@@ -17,6 +17,8 @@ startBtn.onclick = function randonGenerator(event) {
     let ersteGrenze = Math.ceil(first.value);
     let zweiteGrenze = Math.floor(second.value);
     randNum = Math.floor(Math.random() * (zweiteGrenze - ersteGrenze + 1)) + ersteGrenze;
+
+    // randNum = Math.floor(Math.random() * (zweiteGrenze - ersteGrenze) + ersteGrenze);
     if(ersteGrenze == 0 || zweiteGrenze == 0){
         alert("Fill in all empty fields!!!");
         return;
@@ -28,7 +30,7 @@ startBtn.onclick = function randonGenerator(event) {
 btn.onclick = function (event) {
     event.preventDefault();
     userNum = input.value;
-    if(randNum !== 0 && userNum !== undefined) {
+    if(randNum != 0 && userNum != undefined && userNum != 0) {
         
         console.log(userNum, randNum);
         if (userNum > randNum) {
